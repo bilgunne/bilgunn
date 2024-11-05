@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Problem Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>1. Гараас өгсөн тооны цифрүүдийн нийлбэр нь палимдром мөн эсэхийг шалгах</h2>
+        <input type="number" id="palindromeInput" placeholder="Тоогоо оруулна уу">
+        <button onclick="checkPalindromeSum()">Шалгах</button>
+        <div class="result" id="palindromeResult"></div>
+    </div>
+
+    <div class="container">
+        <h2>2. Чоно 25 км/ц хурдтай, туулай 18 км/ц хурдтай. Гараас өгсөн зайтай байхад хэдэн минут хэдэн секундын дараа гэхэд гүйцэх вэ?</h2>
+        <input type="number" id="distanceInput" placeholder="Хоорон дахь зайг (km)-ээр">
+        <button onclick="timeToCatchRabbit()">Тооцоолох</button>
+        <div class="result" id="catchResult"></div>
+    </div>
+
+    <div class="container">
+        <h2>3. Байшин 9 давхар, 3 орцтой, давхартаа 4 айлтай бол гараас өгсөн тоот нь хэддүгээр орцны хэддүгээр давхарын хэд дэх хаалга вэ?</h2>
+        <input type="number" id="doorInput" placeholder="Хаалганы тоотыг оруулах">
+        <button onclick="findEntranceAndFloor()">Тооцоолох</button>
+        <div class="result" id="floorResult"></div>
+    </div>
+
+    <div class="container">
+        <h2>4. Array-д өгөгдсөн 5 тооны хамгийн бага ерөнхий хуваагдагчийг ол</h2>
+        <input type="text" id="arrayInput" placeholder="Тоогоо оруулна уу">
+        <button onclick="calculateLCM()">ХИЕХ-г тооцоолох</button>
+        <div class="result" id="lcmResult"></div>
+    </div>
+
+    <div class="container">
+        <h2>5. Вэб сайтруу өглөө ороход гараас өгсөн тооны 2 зэрэгийг, орой ороход гараас өгсөн тооны язгуурыг ол.</h2>
+        <input type="number" id="numberInput" placeholder="Гараас авах утгыг оруулах">
+        <select id="timeOfDay">
+            <option value="morning">Morning</option>
+            <option value="evening">Evening</option>
+        </select>
+        <button onclick="calculatePowerOrRoot()">Тооцоолох</button>
+        <div class="result" id="powerResult"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
